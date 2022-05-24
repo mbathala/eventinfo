@@ -1,0 +1,19 @@
+{
+  "namespace": "com.wf.avro.model",
+  "type": "record",
+  "name": "TennisScore",
+  "version": 1,
+  "doc": "Avro schema for Tennis game details.",
+  "fields": [
+    {
+      "name": "playerName",
+      "type": "string",
+      "doc": "The Player name."
+    },
+    {
+      "name": "score",
+      "type": "string",
+      "doc": "The latest score of the player."
+    }
+  ]
+}
