@@ -21,7 +21,7 @@ public class EventInfoConsumer {
 	
 	@KafkaListener(topics = "${avro.topic.name}", containerFactory = "kafkaListenerContainerFactory")
 	public void listen(ConsumerRecord<String, TennisScore> record){
-		logger.info("******* Avro Message Consumed for Key: {} for Value: {}", record.key(), record.value());
+		logger.info("******* Avro Message Consumed and for Key: {} for Value: {}", record.key(), record.value());
 	}
 
 }

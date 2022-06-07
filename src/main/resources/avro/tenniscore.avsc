@@ -2,7 +2,7 @@
   "namespace": "com.wf.avro.model",
   "type": "record",
   "name": "TennisScore",
-  "version": 1,
+  "version": 2,
   "doc": "Avro schema for Tennis game details.",
   "fields": [
     {
@@ -12,7 +12,7 @@
     },
     {
       "name": "score",
-      "type": "string",
+      "type": "int",
       "doc": "The latest score of the player."
     }
   ]
